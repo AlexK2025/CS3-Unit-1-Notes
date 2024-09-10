@@ -3,8 +3,9 @@ def main():
 
 #Declare variables
 age = 16
-name = "alex"
-
+teacher = "nabav"
+is_fave_class = True
+grade = 99.99
 
 if __name__ == "__main__":
     main()

@@ -1,32 +1,31 @@
-def calculate(x, y, operation="add"):
-    if (operation=="add"):
-        return x+y
-    elif (operation=="subtract"):
-        return x-y
-    elif (operation=="multiply"):
-        return x*y
-    elif (operation=="divide"):
-        return x/y
-    elif (operation=="equals"):
-        return x==y
-    else:
-        return "Invalid operation"
+def list_demo():
+    my_list = ["H", "e", "l", "l", "o"]
+    my_list.append("!")
+    for item in my_list:
+        print(item, end='')
+    print('')
+    print(f"length: {len(my_list)}")
+    print(my_list[0:6])
+    print(my_list[4:])
+    print(my_list[-3:])
+    my_list.remove('l')
+    my_list.insert(4, 'l')
+    print(my_list)
 
-def list_iteration(other_list):
-    new_list = []
-    for item in other_list:
-        new_list.append(item*2)
-    print(new_list)
+def tuple_demo():
+    print("tuple demo")
 
-    other_list = [item * 2 for item in other_list]
-    print(other_list)
+def set_demo():
+    print("set demo")
+
+def dict_demo():
+    print("dict demo")
 
 def main():
-    print(calculate(2, 3))
-    print(calculate(2, 3, "subtract"))
-    print(calculate(2, 3, operation="subtract"))
-
-    list_iteration([5, 2, 3, 4])
+    list_demo()
+    tuple_demo()
+    set_demo()
+    dict_demo()
 
 if __name__ == "__main__":
     main()

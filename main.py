@@ -33,7 +33,31 @@ def set_demo():
     print(my_set.difference(other_set))
 
 def dict_demo():
-    print("dict demo")
+    costumes = {
+        "m&m": {
+            "popularity": 0.30,
+            "price": 40.00,
+            "school appropriate": "if not green",
+            "items": ["suit", "white tights"]
+        },
+        "Cat": {
+            "popularity": 0.95,
+            "price": 30.00,
+            "school appropriate": "maybe",
+            "items": ["cat ears", "tail"]
+        },
+        "Jorge": {
+            "popularity": 0.00,
+            "price": 0.00,
+            "school appropriate": False,
+            "items": ["clown hammer"]
+        }
+    }
+    print(costumes)
+    print(costumes.keys())
+    print(costumes.values())
+    print(costumes["Jorge"])
+    print(costumes.get("Cat"))
 
 def main():
     list_demo()

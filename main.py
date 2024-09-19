@@ -52,12 +52,25 @@ def dict_demo():
             "school appropriate": False,
             "items": ["clown hammer"]
         }
+
     }
     print(costumes)
     print(costumes.keys())
     print(costumes.values())
     print(costumes["Jorge"])
     print(costumes.get("Cat"))
+    print("Mr. Titcomb" in costumes)
+    
+    costumes["Mr. Titcomb"] = {
+        "popularity": 1,
+        "price": 500000.00,
+        "scool appropriate": "god no",
+        "items": ["whiteboard marker", "definitely real hair"]
+    }
+
+    for costume in costumes:
+        print(costume)
+        print(costumes[costume])
 
 def main():
     list_demo()
